@@ -15,10 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/login', [ApiController::class, 'apiLogin']);
-Route::middleware('auth:sanctum')->get('/divisions', [ApiController::class, 'apiGetAllDataDivision']);
-Route::middleware('auth:sanctum')->get('/employees', [ApiController::class, 'apiGetAllDataKaryawan']);
-Route::middleware('auth:sanctum')->post('/employees', [ApiController::class, 'apiCreateDataKaryawan']);
-Route::middleware('auth:sanctum')->put('/employees/{uuid}', [ApiController::class, 'apiUpdateDataKaryawan']);
-Route::middleware('auth:sanctum')->delete('/employees/{uuid}', [ApiController::class, 'apiDeleteDataKaryawan']);
-Route::middleware('auth:sanctum')->post('/logout', [ApiController::class, 'apiLogout']);
+Route::get('/nilaiRT', [ApiController::class, 'apiGetNilaiRT']);
+Route::get('/nilaiST', [ApiController::class, 'apiGetNilaiST']);

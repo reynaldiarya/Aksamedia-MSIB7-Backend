@@ -4,9 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
 
-class Division extends Model
+class Nilai extends Model
 {
-    use HasUuids, HasFactory;
+    use HasFactory;
+
+    protected $table = 'nilai';
 }

@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class DivisionResource extends JsonResource
+class NilaiStResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,8 +15,10 @@ class DivisionResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'id' => $this->id,
-            'name' => $this->name
+            'nama' => $this->nama,
+            'listNilai' => $this->listNilai,
+            'nisn' => $this->nisn,
+            'total' => $this->total
         ];
     }
 }
