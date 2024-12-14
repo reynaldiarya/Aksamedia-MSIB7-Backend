@@ -42,9 +42,11 @@ Authorization: Bearer {token}
 **Body:**
 ```json
 {
-  "name": "John Doe",
-  "position": "Software Engineer",
-  "division": "IT"
+  "image": "image.png",
+  "name": "John Smith",
+  "phone": "12345"
+  "division": "uuid"
+  "position": "Senior Software Engineer",
 }
 ```
 
@@ -60,9 +62,11 @@ Authorization: Bearer {token}
 **Body:**
 ```json
 {
+  "image": "image.png",
   "name": "John Smith",
+  "phone": "12345"
+  "division": "uuid"
   "position": "Senior Software Engineer",
-  "division": "IT"
 }
 ```
 
